@@ -1,0 +1,120 @@
+/* 
+    Name: Nicholas vickery
+    Date: 7/11/2023
+    Project: Lone knight
+*/
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative; 
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#knight {
+    position: absolute;
+    left: 0px;
+    bottom: 3px;
+}
+.enemy {
+    position: absolute;
+    width: 450px; 
+    height: 340px;
+    background-image: url("beholder.png");
+}
+.boss {
+    position: absolute;
+    bottom: 100px;
+    width: 450px;
+    height: 450px;
+    background: url('dragon.gif') no-repeat;
+    background-size: cover;
+}
+#potion {
+    position: absolute;
+    bottom: 100px;
+    display: none;
+    background-image: url('potion.png');
+    width: 50px; 
+    height: 50px; 
+    background-size: cover;
+}
+  
+.hitbox {
+    position: absolute;
+    width: 15%; 
+    height: 15%; 
+    pointer-events: none; 
+}
+#content {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+#header-text {
+    background-color: white; 
+    color: black;
+    padding: 20px; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    text-align: center; 
+    top: 0;
+}
+#instructions {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+    border: 2px solid black; 
+}
+#game-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+#game-controls {
+    align-items: center;
+    top: 0;
+}
+#game {
+    margin-left: 350px;
+}
+#level-display {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    padding-left: 5px;
+}
+#high-score-display {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    padding-left: 5px;
+}
+#health{
+    width: 300px;
+    margin-top: -25px;
+    text-align: center;
+}

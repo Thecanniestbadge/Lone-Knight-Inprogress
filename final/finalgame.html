@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    Name: Nicholas vickery
+    Date: 7/11/2023
+    Project: Lone Knight
+  -->
+<head>
+  <title>Animation</title>
+  <link  href="animation.css" rel="stylesheet">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <audio id="theAudio" controls>
+    <source src="LonelyDay.mp3" type="audio/mpeg">
+  </audio>
+  <div id="knight">
+    <div id="health">
+      <progress id="bar" value="100" min="0" max="100"></progress>
+    </div>
+  </div>
+    <div id="content">
+      <div id="header-text">
+        <h1>Animation show-off</h1>
+        <p>Here I will be demonstrating how a sprite sheet can be used.</p>
+      </div>
+      <div id="instructions">
+        <p>D = run to the right</p>
+        <p>A = run to the left</p>
+        <p>S = Defend</p>
+        <p>W = Attack</p>
+        <p>P = potion</p>
+      </div>
+      <div id="level-display">Current Level: <span id="current-level">1</span></div>
+      <div id="high-score-display">High Score: <span id="high-score">0</span></div>
+      <button onclick="playAudio()" type="button"></button>
+    </div>    
+  </div>
+  <div id="potion"></div>
+</body>
+</html>
